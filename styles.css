@@ -1,0 +1,219 @@
+:root {
+    --text-color: #e0e0e0;
+    --accent-color: #bb86fc;
+    --link-bg: #101010;
+    --link-hover-bg: #333;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-color);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#profile-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1em;
+    animation: float 3s ease-in-out infinite;
+}
+
+#enter-button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    color: var(--text-color);
+    background-color: var(--link-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enter-button:hover {
+    background-color: var(--link-hover-bg);
+}
+
+#fireflies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.firefly {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--bg-color);
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#name {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    color: var(--text-color);
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: var(--link-bg);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s;
+}
+
+.link-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+}
+
+.link:hover {
+    background-color: var(--link-hover-bg);
+}
+
+#discord-status {
+    margin-top: 2em;
+}
+
+#discord-status h3 {
+    color: var(--accent-color);
+}
+
+#facts {
+    margin-top: 2em;
+}
+
+#facts h3 {
+    color: var (--accent-color);
+    margin-bottom: 0.5em;
+}
+
+#fact-text {
+    font-size: 1.2em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

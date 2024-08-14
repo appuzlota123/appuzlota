@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appuzlota's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="your-video-url.mp4" type="video/mp4">
+      </video>
+      <audio id="bg-audio" autoplay loop>
+        <source src="your-audio-url.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="landing-page">
+        <button id="enter-button">Click to Enter</button>
+        <div id="fireflies"></div>
+    </div>
+
+    <main id="profile-page" style="display: none;">
+        <div class="container">
+            <section id="profile">
+                <div id="particles-js"></div>
+                <h2 id="name">appuzlota</h2>
+                <div id="facts">
+                    <h3>Facts About Me</h3>
+                    <p id="fact-text">Loading facts...</p>
+                </div>
+                <div id="links">
+                    <a href="your-spotify-link" target="_blank" class="link">
+                        <img src="spotify-logo-url.png" alt="Spotify Logo" class="link-logo"> Spotify
+                    </a>
+                    <a href="your-website-link" target="_blank" class="link">
+                        <img src="website-logo-url.png" alt="Website Logo" class="link-logo"> Website
+                    </a>
+                    <a href="your-discord-link" target="_blank" class="link">
+                        <img src="discord-logo-url.png" alt="Discord Logo" class="link-logo"> Discord
+                    </a>
+                </div>
+                <div id="discord-status">
+                    <h3><i class="fab fa-discord"></i> Status:</h3>
+                    <p id="status">Loading...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
